@@ -1,0 +1,22 @@
+name: stimage2
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8.6
+  - pytorch
+  - torchvision
+  - pytorch-cuda=11.7
+  - gpytorch 
+  - wandb
+  - pytorch-lightning
+  - nb_conda_kernels
+  - ipykernel
+  - pandas
+  - anndata
+  - scanpy
+  - matplotlib
+  - seaborn
+
