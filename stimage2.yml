@@ -19,4 +19,4 @@ dependencies:
   - scanpy
   - matplotlib
   - seaborn
-
+  - notebook
