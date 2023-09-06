@@ -2,22 +2,27 @@
 #SBATCH -N 1
 #SBATCH -n 1
 #SBATCH -c 12
-#SBATCH --mem=150000
+#SBATCH --mem=50000
 #SBATCH -o jobfiles/out_%x_%j.txt
 #SBATCH -e jobfiles/error_%x_%j.txt
 #SBATCH --partition=gpu
-#SBATCH --gres=gpu:tesla:1
-#SBATCH --job-name sam_bnn
+#SBATCH --gres=gpu:tesla-smx2:1
+# #SBATCH --gres=gpu:tesla:1
+
+#SBATCH --job-name sam_test
 
 # get tunneling info
 XDG_RUNTIME_DIR=""
 node=$(hostname -s)
 user=$(whoami)
 cluster="wiener.hpc.net"
-port=4261
+port=4263
 
 # print tunneling instructions jupyter-log
 echo -e "
+Hostname for the node: 
+${node}
+
 Command to create ssh tunnel:
 ssh -N -f -L ${port}:${node}:${port} ${user}@${cluster}.uq.edu.au
 

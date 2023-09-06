@@ -1,0 +1,10 @@
+
+Hostname for the node: 
+gpunode-1-0
+
+Command to create ssh tunnel:
+ssh -N -f -L 4263:gpunode-1-0:4263 uqsmac12@wiener.hpc.net.uq.edu.au
+
+Use a Browser on your local machine to go to:
+localhost:4263  (prefix w/ https:// if using password)
+

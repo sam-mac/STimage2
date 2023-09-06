@@ -1,0 +1,840 @@
+[I 13:27:02.173 NotebookApp] [nb_conda_kernels] enabled, 11 kernels found
+[I 13:27:05.584 NotebookApp] Serving notebooks from local directory: /clusterdata/uqsmac12/STimage2
+[I 13:27:05.585 NotebookApp] Jupyter Notebook 6.5.2 is running at:
+[I 13:27:05.585 NotebookApp] http://gpunode-1-0:4263/?token=86f8f5f0a773e88fe4efd079c650648fa08748b5196d4757
+[I 13:27:05.585 NotebookApp]  or http://127.0.0.1:4263/?token=86f8f5f0a773e88fe4efd079c650648fa08748b5196d4757
+[I 13:27:05.585 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 13:27:05.591 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///clusterdata/uqsmac12/.local/share/jupyter/runtime/nbserver-275182-open.html
+    Or copy and paste one of these URLs:
+        http://gpunode-1-0:4263/?token=86f8f5f0a773e88fe4efd079c650648fa08748b5196d4757
+     or http://127.0.0.1:4263/?token=86f8f5f0a773e88fe4efd079c650648fa08748b5196d4757
+[I 14:34:52.278 NotebookApp] 302 GET /?token=86f8f5f0a773e88fe4efd079c650648fa08748b5196d4757 (192.168.0.1) 1.270000ms
+[I 14:35:18.412 NotebookApp] Creating new notebook in /notebooks
+[E 14:35:18.538 NotebookApp] Error while saving file: notebooks/Untitled.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 204, in store_signature
+        if not self.check_signature(digest, algorithm):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 239, in check_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 14:35:18.600 NotebookApp] 500 POST /api/contents/notebooks (192.168.0.1): Unexpected error while saving file: notebooks/Untitled.ipynb disk I/O error
+[W 14:35:18.601 NotebookApp] Unexpected error while saving file: notebooks/Untitled.ipynb disk I/O error
+[E 14:35:18.601 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/tree/notebooks",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 14:35:18.601 NotebookApp] 500 POST /api/contents/notebooks (192.168.0.1) 190.670000ms referer=http://127.0.0.1:4263/tree/notebooks
+[I 14:37:41.261 NotebookApp] New terminal with automatic name: 1
+[I 14:40:23.860 NotebookApp] Creating new notebook in /notebooks
+[W 14:40:28.011 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20230905132702 (192.168.0.1) 20.320000ms referer=http://127.0.0.1:4263/notebooks/notebooks/Untitled.ipynb?kernel_name=lit_torch_gp
+[I 14:40:28.187 NotebookApp] Kernel started: a9dd09fe-3f89-47e9-803b-326520d74d83, name: lit_torch_gp
+[I 14:40:33.480 NotebookApp] Kernel shutdown: a9dd09fe-3f89-47e9-803b-326520d74d83
+Traceback (most recent call last):
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/ipykernel_launcher.py", line 15, in <module>
+    from ipykernel import kernelapp as app
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/ipykernel/kernelapp.py", line 19, in <module>
+    from IPython.core.application import (  # type:ignore[attr-defined]
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/IPython/__init__.py", line 53, in <module>
+    from .terminal.embed import embed
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/IPython/terminal/embed.py", line 16, in <module>
+    from IPython.terminal.interactiveshell import TerminalInteractiveShell
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/IPython/terminal/interactiveshell.py", line 48, in <module>
+    from .debugger import TerminalPdb, Pdb
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/IPython/terminal/debugger.py", line 8, in <module>
+    from .shortcuts import create_ipython_shortcuts
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 874, in get_code
+  File "<frozen importlib._bootstrap_external>", line 973, in get_data
+KeyboardInterrupt
+[W 14:40:41.148 NotebookApp] Notebook notebooks/stimage1_basic_expression_vis.ipynb is not trusted
+[W 14:40:41.162 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20230905132702 (192.168.0.1) 2.250000ms referer=http://127.0.0.1:4263/notebooks/notebooks/stimage1_basic_expression_vis.ipynb
+[I 14:40:41.438 NotebookApp] Kernel started: d15ec0fc-9787-4ab7-8a7c-7db9030daf6d, name: lit_torch_gp
+[I 14:40:49.595 NotebookApp] Creating new notebook in /notebooks
+[W 14:40:50.419 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20230905132702 (192.168.0.1) 2.640000ms referer=http://127.0.0.1:4263/notebooks/notebooks/Untitled1.ipynb?kernel_name=lit_torch_gp
+[I 14:40:50.472 NotebookApp] Kernel started: 163c01e3-26c3-4d46-8d27-819b0d8c7586, name: lit_torch_gp
+[W 14:41:28.629 NotebookApp] Timeout waiting for kernel_info reply from a9dd09fe-3f89-47e9-803b-326520d74d83
+[E 14:41:28.632 NotebookApp] Error opening stream: HTTP 404: Not Found (Kernel does not exist: a9dd09fe-3f89-47e9-803b-326520d74d83)
+[I 14:42:50.496 NotebookApp] Saving file at /notebooks/Untitled1.ipynb
+/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/__init__.py:128: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate(nb)
+/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py:353: MissingIDFieldWarning: Code cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  validate_nb(model['content'])
+[I 14:43:20.592 NotebookApp] Creating new file in /notebooks
+[I 14:43:30.390 NotebookApp] Saving file at /notebooks/untitled.txt
+[W 14:45:17.641 NotebookApp] Notebook notebooks/visium_dataset_objects.ipynb is not trusted
+[W 14:45:17.649 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20230905132702 (192.168.0.1) 96.390000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 14:45:18.319 NotebookApp] Kernel started: 34e60b43-eb5b-4713-bdff-c6d3db909274, name: python3
+[W 14:45:20.187 NotebookApp] 404 GET /static/components/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf (192.168.0.1) 3.020000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 14:45:27.042 NotebookApp] Starting buffering for 163c01e3-26c3-4d46-8d27-819b0d8c7586:ab8f93ead7254a0684ccf6ffdc8c482b
+[I 14:45:50.061 NotebookApp] Starting buffering for 34e60b43-eb5b-4713-bdff-c6d3db909274:28f94f691b1e4b3891f12744a8020de1
+[I 14:45:54.959 NotebookApp] Kernel shutdown: 34e60b43-eb5b-4713-bdff-c6d3db909274
+[W 14:45:55.177 NotebookApp] delete /notebooks/visium_dataset_objects.ipynb
+[W 14:46:01.792 NotebookApp] delete /notebooks/Untitled.ipynb
+[I 14:46:01.800 NotebookApp] Kernel shutdown: 163c01e3-26c3-4d46-8d27-819b0d8c7586
+[W 14:46:02.018 NotebookApp] delete /notebooks/Untitled1.ipynb
+[I 14:46:36.365 NotebookApp] Creating new file in /notebooks
+[W 14:47:18.174 NotebookApp] 400 GET /api/contents/notebooks/visium_dataset_objects.ipynb?type=notebook&_=1693889237344 (192.168.0.1): Unreadable Notebook: /clusterdata/uqsmac12/STimage2/notebooks/visium_dataset_objects.ipynb NotJSONError("Notebook does not appear to be JSON: ''...")
+[W 14:47:18.175 NotebookApp] Unreadable Notebook: /clusterdata/uqsmac12/STimage2/notebooks/visium_dataset_objects.ipynb NotJSONError("Notebook does not appear to be JSON: ''...")
+[W 14:47:18.175 NotebookApp] 400 GET /api/contents/notebooks/visium_dataset_objects.ipynb?type=notebook&_=1693889237344 (192.168.0.1) 5.870000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[W 14:47:18.206 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20230905132702 (192.168.0.1) 3.810000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[W 14:47:28.534 NotebookApp] 400 GET /api/contents/notebooks/visium_dataset_objects.ipynb?type=notebook&_=1693889248412 (192.168.0.1): Unreadable Notebook: /clusterdata/uqsmac12/STimage2/notebooks/visium_dataset_objects.ipynb NotJSONError("Notebook does not appear to be JSON: ''...")
+[W 14:47:28.534 NotebookApp] Unreadable Notebook: /clusterdata/uqsmac12/STimage2/notebooks/visium_dataset_objects.ipynb NotJSONError("Notebook does not appear to be JSON: ''...")
+[W 14:47:28.534 NotebookApp] 400 GET /api/contents/notebooks/visium_dataset_objects.ipynb?type=notebook&_=1693889248412 (192.168.0.1) 2.130000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[W 14:47:28.552 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20230905132702 (192.168.0.1) 2.530000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[W 14:47:35.809 NotebookApp] delete /notebooks/visium_dataset_objects.ipynb
+[I 14:47:39.254 NotebookApp] Creating new file in /notebooks
+[W 14:48:30.658 NotebookApp] 400 GET /api/contents/notebooks/visium_dataset_objects.ipynb?type=notebook&_=1693889309840 (192.168.0.1): Unreadable Notebook: /clusterdata/uqsmac12/STimage2/notebooks/visium_dataset_objects.ipynb NotJSONError("Notebook does not appear to be JSON: ''...")
+[W 14:48:30.658 NotebookApp] Unreadable Notebook: /clusterdata/uqsmac12/STimage2/notebooks/visium_dataset_objects.ipynb NotJSONError("Notebook does not appear to be JSON: ''...")
+[W 14:48:30.658 NotebookApp] 400 GET /api/contents/notebooks/visium_dataset_objects.ipynb?type=notebook&_=1693889309840 (192.168.0.1) 5.740000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[W 14:48:30.676 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20230905132702 (192.168.0.1) 2.900000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 14:48:57.853 NotebookApp] Saving file at /notebooks/visium_dataset_objects.txt
+[W 14:49:19.271 NotebookApp] Notebook notebooks/visium_dataset_objects.ipynb is not trusted
+[W 14:49:19.282 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20230905132702 (192.168.0.1) 1.800000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 14:49:19.439 NotebookApp] Kernel started: 997edf89-dff3-4bd7-a048-1466b5f0b65d, name: python3
+[I 14:51:19.485 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[I 14:53:20.372 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 14:57:44.246 NotebookApp] Kernel info request failed, assuming current {}
+[I 15:07:25.098 NotebookApp] Creating new directory in 
+[I 15:08:25.381 NotebookApp] Creating new file in /src
+[I 15:27:45.755 NotebookApp] Saving file at /src/dkl.py
+[E 15:27:45.792 NotebookApp] Error while saving file: src/dkl.py [Errno 122] Disk quota exceeded
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 499, in save
+        self._save_file(os_path, model['content'], model.get('format'))
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/fileio.py", line 340, in _save_file
+        f.write(bcontent)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/contextlib.py", line 120, in __exit__
+        next(self.gen)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/fileio.py", line 210, in atomic_writing
+        yield f
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/contextlib.py", line 120, in __exit__
+        next(self.gen)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/fileio.py", line 117, in atomic_writing
+        fileobj.flush()
+    OSError: [Errno 122] Disk quota exceeded
+[W 15:27:45.828 NotebookApp] 500 PUT /api/contents/src/dkl.py (192.168.0.1): Unexpected error while saving file: src/dkl.py [Errno 122] Disk quota exceeded
+[W 15:27:45.829 NotebookApp] Unexpected error while saving file: src/dkl.py [Errno 122] Disk quota exceeded
+[E 15:27:45.829 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/edit/src/dkl.py",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:27:45.829 NotebookApp] 500 PUT /api/contents/src/dkl.py (192.168.0.1) 75.760000ms referer=http://127.0.0.1:4263/edit/src/dkl.py
+[I 15:27:52.008 NotebookApp] Saving file at /src/dkl.py
+[E 15:27:52.010 NotebookApp] Error while saving file: src/dkl.py [Errno 122] Disk quota exceeded
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 499, in save
+        self._save_file(os_path, model['content'], model.get('format'))
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/fileio.py", line 340, in _save_file
+        f.write(bcontent)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/contextlib.py", line 120, in __exit__
+        next(self.gen)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/fileio.py", line 210, in atomic_writing
+        yield f
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/contextlib.py", line 120, in __exit__
+        next(self.gen)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/fileio.py", line 117, in atomic_writing
+        fileobj.flush()
+    OSError: [Errno 122] Disk quota exceeded
+[W 15:27:52.010 NotebookApp] 500 PUT /api/contents/src/dkl.py (192.168.0.1): Unexpected error while saving file: src/dkl.py [Errno 122] Disk quota exceeded
+[W 15:27:52.011 NotebookApp] Unexpected error while saving file: src/dkl.py [Errno 122] Disk quota exceeded
+[E 15:27:52.011 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/edit/src/dkl.py",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:27:52.012 NotebookApp] 500 PUT /api/contents/src/dkl.py (192.168.0.1) 5.250000ms referer=http://127.0.0.1:4263/edit/src/dkl.py
+[I 15:28:11.733 NotebookApp] Creating new file in /src
+[I 15:29:07.355 NotebookApp] Starting buffering for 997edf89-dff3-4bd7-a048-1466b5f0b65d:4158fad993ef4e29b8b5f1f42ce24811
+[I 15:29:10.006 NotebookApp] Kernel restarted: 997edf89-dff3-4bd7-a048-1466b5f0b65d
+[I 15:29:10.463 NotebookApp] Restoring connection for 997edf89-dff3-4bd7-a048-1466b5f0b65d:4158fad993ef4e29b8b5f1f42ce24811
+[I 15:29:13.724 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:29:13.728 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:29:13.730 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:29:13.730 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:29:13.731 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:29:13.731 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 8.900000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[W 15:29:14.988 NotebookApp] Nudge: attempt 10 on kernel 997edf89-dff3-4bd7-a048-1466b5f0b65d
+[IPKernelApp] ERROR | Failed to create history session in /clusterdata/uqsmac12/.ipython/profile_default/history.sqlite. History will not be saved.
+Traceback (most recent call last):
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/IPython/core/history.py", line 545, in __init__
+    self.new_session()
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/IPython/core/history.py", line 60, in only_when_enabled
+    return f(self, *a, **kw)
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/IPython/core/history.py", line 570, in new_session
+    cur = conn.execute("""INSERT INTO sessions VALUES (NULL, ?, NULL,
+sqlite3.OperationalError: disk I/O error
+[I 15:29:16.998 NotebookApp] Replaying 4 buffered messages
+[I 15:29:19.639 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:29:19.644 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:29:19.644 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:29:19.645 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:29:19.645 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:29:19.645 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 7.410000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:29:38.732 NotebookApp] Starting buffering for 997edf89-dff3-4bd7-a048-1466b5f0b65d:4158fad993ef4e29b8b5f1f42ce24811
+[I 15:29:38.974 NotebookApp] Kernel restarted: 997edf89-dff3-4bd7-a048-1466b5f0b65d
+[I 15:29:39.480 NotebookApp] Restoring connection for 997edf89-dff3-4bd7-a048-1466b5f0b65d:4158fad993ef4e29b8b5f1f42ce24811
+[IPKernelApp] ERROR | Failed to create history session in /clusterdata/uqsmac12/.ipython/profile_default/history.sqlite. History will not be saved.
+Traceback (most recent call last):
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/IPython/core/history.py", line 545, in __init__
+    self.new_session()
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/IPython/core/history.py", line 60, in only_when_enabled
+    return f(self, *a, **kw)
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/IPython/core/history.py", line 570, in new_session
+    cur = conn.execute("""INSERT INTO sessions VALUES (NULL, ?, NULL,
+sqlite3.OperationalError: disk I/O error
+[I 15:29:39.985 NotebookApp] Replaying 3 buffered messages
+[I 15:30:07.398 NotebookApp] Starting buffering for 997edf89-dff3-4bd7-a048-1466b5f0b65d:4158fad993ef4e29b8b5f1f42ce24811
+[I 15:30:07.406 NotebookApp] Kernel shutdown: 997edf89-dff3-4bd7-a048-1466b5f0b65d
+[I 15:30:09.264 NotebookApp] Kernel started: 308be4a4-b9f0-4b42-933e-eb3048360d3f, name: lit_torch_gp
+[IPKernelApp] ERROR | Failed to create history session in /clusterdata/uqsmac12/.ipython/profile_default/history.sqlite. History will not be saved.
+Traceback (most recent call last):
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/IPython/core/history.py", line 545, in __init__
+    self.new_session()
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/IPython/core/history.py", line 60, in only_when_enabled
+    return f(self, *a, **kw)
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/IPython/core/history.py", line 570, in new_session
+    cur = conn.execute("""INSERT INTO sessions VALUES (NULL, ?, NULL,
+sqlite3.OperationalError: disk I/O error
+[I 15:31:19.534 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:31:19.538 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:31:19.539 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:31:19.540 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:31:19.540 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:31:19.540 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 7.650000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:33:19.472 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:33:19.476 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:33:19.477 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:33:19.477 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:33:19.478 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:33:19.478 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 7.730000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:35:19.478 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:35:19.482 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:35:19.483 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:35:19.483 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:35:19.488 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:35:19.488 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 8.130000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:36:56.502 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:36:56.506 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:36:56.508 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:36:56.508 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:36:56.509 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:36:56.509 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 9.010000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:36:59.669 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:36:59.673 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:36:59.674 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:36:59.674 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:36:59.675 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:36:59.675 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 7.920000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:37:19.474 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:37:19.478 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:37:19.478 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:37:19.479 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:37:19.479 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:37:19.479 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 7.070000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:39:19.512 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:39:19.516 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:39:19.517 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:39:19.517 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:39:19.518 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:39:19.518 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 7.980000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:41:19.716 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:41:19.720 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:41:19.721 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:41:19.721 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:41:19.722 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:41:19.722 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 8.650000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:43:19.464 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:43:19.469 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:43:19.470 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:43:19.470 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:43:19.471 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:43:19.471 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 8.720000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:45:19.521 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:45:19.525 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:45:19.526 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:45:19.526 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:45:19.527 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:45:19.527 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 8.200000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:47:19.482 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:47:19.486 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:47:19.487 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:47:19.487 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:47:19.487 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:47:19.488 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 7.640000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:49:19.468 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:49:19.473 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:49:19.473 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:49:19.474 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:49:19.474 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:49:19.475 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 11.190000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:51:19.499 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:51:19.503 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:51:19.504 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:51:19.504 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:51:19.505 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:51:19.505 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 18.190000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:53:19.467 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:53:19.472 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:53:19.473 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:53:19.473 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:53:19.474 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:53:19.474 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 8.890000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:55:19.578 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:55:19.582 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:55:19.584 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:55:19.585 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:55:19.585 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:55:19.585 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 10.090000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:57:19.604 NotebookApp] Saving file at /notebooks/visium_dataset_objects.ipynb
+[E 15:57:19.609 NotebookApp] Error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:57:19.609 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[W 15:57:19.609 NotebookApp] Unexpected error while saving file: notebooks/visium_dataset_objects.ipynb disk I/O error
+[E 15:57:19.610 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:57:19.610 NotebookApp] 500 PUT /api/contents/notebooks/visium_dataset_objects.ipynb (192.168.0.1) 14.340000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_dataset_objects.ipynb
+[I 15:57:58.966 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[E 15:57:58.972 NotebookApp] Error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:57:58.972 NotebookApp] 500 PUT /api/contents/notebooks/visium_classification_dataset_object.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+[W 15:57:58.972 NotebookApp] Unexpected error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+[E 15:57:58.973 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_classification_dataset_object.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:57:58.973 NotebookApp] 500 PUT /api/contents/notebooks/visium_classification_dataset_object.ipynb (192.168.0.1) 13.900000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_classification_dataset_object.ipynb
+[I 15:58:02.595 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[E 15:58:02.600 NotebookApp] Error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:58:02.600 NotebookApp] 500 PUT /api/contents/notebooks/visium_classification_dataset_object.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+[W 15:58:02.601 NotebookApp] Unexpected error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+[E 15:58:02.601 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_classification_dataset_object.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:58:02.602 NotebookApp] 500 PUT /api/contents/notebooks/visium_classification_dataset_object.ipynb (192.168.0.1) 22.180000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_classification_dataset_object.ipynb
+[I 15:58:14.900 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[E 15:58:14.905 NotebookApp] Error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:58:14.905 NotebookApp] 500 PUT /api/contents/notebooks/visium_classification_dataset_object.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+[W 15:58:14.905 NotebookApp] Unexpected error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+[E 15:58:14.906 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_classification_dataset_object.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:58:14.906 NotebookApp] 500 PUT /api/contents/notebooks/visium_classification_dataset_object.ipynb (192.168.0.1) 9.990000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_classification_dataset_object.ipynb
+[I 15:59:19.650 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[E 15:59:19.655 NotebookApp] Error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 15:59:19.655 NotebookApp] 500 PUT /api/contents/notebooks/visium_classification_dataset_object.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+[W 15:59:19.656 NotebookApp] Unexpected error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+[E 15:59:19.656 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_classification_dataset_object.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 15:59:19.656 NotebookApp] 500 PUT /api/contents/notebooks/visium_classification_dataset_object.ipynb (192.168.0.1) 13.390000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_classification_dataset_object.ipynb
+[I 16:01:19.704 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[E 16:01:19.709 NotebookApp] Error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 16:01:19.710 NotebookApp] 500 PUT /api/contents/notebooks/visium_classification_dataset_object.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+[W 16:01:19.710 NotebookApp] Unexpected error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+[E 16:01:19.710 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_classification_dataset_object.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 16:01:19.711 NotebookApp] 500 PUT /api/contents/notebooks/visium_classification_dataset_object.ipynb (192.168.0.1) 14.280000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_classification_dataset_object.ipynb
+[I 16:03:19.473 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[E 16:03:19.477 NotebookApp] Error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 16:03:19.478 NotebookApp] 500 PUT /api/contents/notebooks/visium_classification_dataset_object.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+[W 16:03:19.478 NotebookApp] Unexpected error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+[E 16:03:19.479 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_classification_dataset_object.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 16:03:19.479 NotebookApp] 500 PUT /api/contents/notebooks/visium_classification_dataset_object.ipynb (192.168.0.1) 11.020000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_classification_dataset_object.ipynb
+[I 16:04:57.318 NotebookApp] New terminal with automatic name: 2
+[I 16:05:19.499 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[E 16:05:19.504 NotebookApp] Error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 16:05:19.506 NotebookApp] 500 PUT /api/contents/notebooks/visium_classification_dataset_object.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+[W 16:05:19.506 NotebookApp] Unexpected error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+[E 16:05:19.507 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_classification_dataset_object.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 16:05:19.507 NotebookApp] 500 PUT /api/contents/notebooks/visium_classification_dataset_object.ipynb (192.168.0.1) 35.550000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_classification_dataset_object.ipynb
+[I 16:07:19.543 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[E 16:07:19.549 NotebookApp] Error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/filemanager.py", line 492, in save
+        self.check_and_sign(nb, path)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/notebook/services/contents/manager.py", line 490, in check_and_sign
+        self.notary.sign(nb)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 462, in sign
+        self.store.store_signature(signature, self.algorithm)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/nbformat/sign.py", line 205, in store_signature
+        self.db.execute(
+    sqlite3.OperationalError: disk I/O error
+[W 16:07:19.549 NotebookApp] 500 PUT /api/contents/notebooks/visium_classification_dataset_object.ipynb (192.168.0.1): Unexpected error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+[W 16:07:19.550 NotebookApp] Unexpected error while saving file: notebooks/visium_classification_dataset_object.ipynb disk I/O error
+[E 16:07:19.550 NotebookApp] {
+      "Host": "127.0.0.1:4263",
+      "Accept": "application/json, text/javascript, */*; q=0.01",
+      "Referer": "http://127.0.0.1:4263/notebooks/notebooks/visium_classification_dataset_object.ipynb",
+      "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+    }
+[E 16:07:19.550 NotebookApp] 500 PUT /api/contents/notebooks/visium_classification_dataset_object.ipynb (192.168.0.1) 15.650000ms referer=http://127.0.0.1:4263/notebooks/notebooks/visium_classification_dataset_object.ipynb
+[I 16:09:19.498 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:11:19.551 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:13:19.692 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:15:19.480 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:17:19.553 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:19:19.627 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:23:20.197 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:35:19.723 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:37:19.591 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:39:19.647 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:41:19.474 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:43:19.584 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:47:19.490 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:49:19.488 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:51:19.672 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:53:19.626 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:55:19.626 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:57:19.585 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 16:59:19.542 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 17:03:19.561 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 17:05:19.548 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 17:07:19.507 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 17:09:28.813 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 17:11:48.342 NotebookApp] Starting buffering for d15ec0fc-9787-4ab7-8a7c-7db9030daf6d:e6120083f6394a51851f2b0265925d62
+[I 17:11:48.344 NotebookApp] Starting buffering for 308be4a4-b9f0-4b42-933e-eb3048360d3f:4158fad993ef4e29b8b5f1f42ce24811
+[I 17:11:49.617 NotebookApp] Restoring connection for 308be4a4-b9f0-4b42-933e-eb3048360d3f:4158fad993ef4e29b8b5f1f42ce24811
+[E 17:11:49.632 NotebookApp] Uncaught exception in zmqstream callback
+    Traceback (most recent call last):
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/zmq/eventloop/zmqstream.py", line 621, in _handle_events
+        self._handle_recv()
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/zmq/eventloop/zmqstream.py", line 640, in _handle_recv
+        msg = self.socket.recv_multipart(zmq.NOBLOCK, copy=self._recv_copy)
+      File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/zmq/sugar/socket.py", line 799, in recv_multipart
+        while self.getsockopt(zmq.RCVMORE):
+      File "zmq/backend/cython/socket.pyx", line 478, in zmq.backend.cython.socket.Socket.get
+      File "zmq/backend/cython/socket.pyx", line 138, in zmq.backend.cython.socket._check_closed
+    zmq.error.ZMQError: Socket operation on non-socket
+Exception in callback None()
+handle: <Handle cancelled>
+Traceback (most recent call last):
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/asyncio/events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/tornado/platform/asyncio.py", line 206, in _handle_events
+    handler_func(fileobj, events)
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/zmq/eventloop/zmqstream.py", line 621, in _handle_events
+    self._handle_recv()
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/zmq/eventloop/zmqstream.py", line 640, in _handle_recv
+    msg = self.socket.recv_multipart(zmq.NOBLOCK, copy=self._recv_copy)
+  File "/scratch/smp/uqsmac12/.conda/env/lit_torch_gp/lib/python3.8/site-packages/zmq/sugar/socket.py", line 799, in recv_multipart
+    while self.getsockopt(zmq.RCVMORE):
+  File "zmq/backend/cython/socket.pyx", line 478, in zmq.backend.cython.socket.Socket.get
+  File "zmq/backend/cython/socket.pyx", line 138, in zmq.backend.cython.socket._check_closed
+zmq.error.ZMQError: Socket operation on non-socket
+[I 17:11:49.726 NotebookApp] Restoring connection for d15ec0fc-9787-4ab7-8a7c-7db9030daf6d:e6120083f6394a51851f2b0265925d62
+[W 17:13:19.648 NotebookApp] WebSocket ping timeout after 90031 ms.
+[W 17:13:19.727 NotebookApp] WebSocket ping timeout after 90001 ms.
+[I 17:13:24.657 NotebookApp] Starting buffering for 308be4a4-b9f0-4b42-933e-eb3048360d3f:4158fad993ef4e29b8b5f1f42ce24811
+[I 17:13:24.731 NotebookApp] Starting buffering for d15ec0fc-9787-4ab7-8a7c-7db9030daf6d:e6120083f6394a51851f2b0265925d62
+[I 17:24:23.917 NotebookApp] Restoring connection for 308be4a4-b9f0-4b42-933e-eb3048360d3f:4158fad993ef4e29b8b5f1f42ce24811
+[I 17:24:24.451 NotebookApp] Restoring connection for d15ec0fc-9787-4ab7-8a7c-7db9030daf6d:e6120083f6394a51851f2b0265925d62
+[I 17:28:51.665 NotebookApp] Creating new directory in /src
+[I 17:31:13.114 NotebookApp] Saving file at /src/wide_resnet.py
+[I 17:31:53.641 NotebookApp] Saving file at /src/dkl.py
+[I 17:32:45.018 NotebookApp] Creating new file in /src
+[I 17:33:32.340 NotebookApp] Creating new file in /src/layers
+[I 17:33:47.665 NotebookApp] Creating new file in /src/layers
+[I 17:34:17.949 NotebookApp] Saving file at /src/layers/spectral_batchnorm.py
+[I 17:34:39.017 NotebookApp] Creating new file in /src/layers
+[I 17:35:33.060 NotebookApp] Saving file at /src/layers/spectral_norm_conv.py
+[I 17:35:40.981 NotebookApp] Creating new file in /src/layers
+[I 17:36:14.045 NotebookApp] Saving file at /src/layers/spectral_norm_fc.py
+[I 17:42:12.392 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 17:44:12.374 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 17:46:12.415 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 17:48:12.784 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 17:52:12.367 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 17:53:44.092 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 17:53:46.328 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 17:53:47.692 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+[I 18:45:09.592 NotebookApp] Saving file at /notebooks/visium_classification_dataset_object.ipynb
+slurmstepd: error: *** JOB 576661 ON gpunode-1-0 CANCELLED AT 2023-09-05T18:45:48 ***
