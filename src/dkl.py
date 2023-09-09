@@ -17,26 +17,28 @@ from sklearn import cluster
 
 def initial_values(train_dataset, feature_extractor, n_inducing_points):
     steps = 10
+    # get `steps` many random chunks of index
     idx = torch.randperm(len(train_dataset))[:1000].chunk(steps)
     f_X_samples = []
 
     with torch.no_grad():
         for i in range(steps):
-            X_sample = torch.stack([train_dataset[j][0] for j in idx[i]])
-
+            # for each step / chunk, stack the corresponding samples
+            X_sample = torch.stack([train_dataset[j.item()][0] for j in idx[i]])
+            
             if torch.cuda.is_available():
                 X_sample = X_sample.cuda()
                 feature_extractor = feature_extractor.cuda()
-
+            # append the output features
             f_X_samples.append(feature_extractor(X_sample).cpu())
-
+    # concatenate the random outputs
     f_X_samples = torch.cat(f_X_samples)
-
+    # do MiniBatchKMeans on random outputs with centroid for each inducing point
     initial_inducing_points = _get_initial_inducing_points(
         f_X_samples.numpy(), n_inducing_points
     )
     initial_lengthscale = _get_initial_lengthscale(f_X_samples)
-
+    
     return initial_inducing_points, initial_lengthscale
 
 
@@ -53,9 +55,10 @@ def _get_initial_inducing_points(f_X_sample, n_inducing_points):
 def _get_initial_lengthscale(f_X_samples):
     if torch.cuda.is_available():
         f_X_samples = f_X_samples.cuda()
-
-    initial_lengthscale = torch.pdist(f_X_samples).mean()
-
+    # get the averaged pairwise distance between all features
+#     initial_lengthscale = torch.pdist(f_X_samples).mean()
+    initial_lengthscale = torch.pdist(f_X_samples).median()
+    
     return initial_lengthscale.cpu()
 
 
