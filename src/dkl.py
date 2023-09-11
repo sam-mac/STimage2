@@ -8,6 +8,8 @@ from gpytorch.models import ApproximateGP
 
 from gpytorch.variational import (
     CholeskyVariationalDistribution,
+    # NaturalVariationalDistribution is less stable with non-conjugate priors
+    TrilNaturalVariationalDistribution,  
     IndependentMultitaskVariationalStrategy,
     VariationalStrategy,
 )
@@ -126,6 +128,71 @@ class GP(ApproximateGP):
             if "inducing_points" in name:
                 return param
 
+            
+class GP_Natural(ApproximateGP):
+    def __init__(
+        self,
+        num_outputs,
+        initial_lengthscale,
+        initial_inducing_points,
+        kernel="RBF",
+    ):
+        n_inducing_points = initial_inducing_points.shape[0]
+
+        if num_outputs > 1:
+            batch_shape = torch.Size([num_outputs])
+        else:
+            batch_shape = torch.Size([])
+        
+        # Use natural variational distribution
+        variational_distribution = TrilNaturalVariationalDistribution(
+            n_inducing_points, batch_shape=batch_shape
+        )
+
+        variational_strategy = VariationalStrategy(
+            self, initial_inducing_points, variational_distribution
+        )
+
+        if num_outputs > 1:
+            variational_strategy = IndependentMultitaskVariationalStrategy(
+                variational_strategy, num_tasks=num_outputs
+            )
+
+        super().__init__(variational_strategy)
+
+        kwargs = {
+            "batch_shape": batch_shape,
+        }
+
+        if kernel == "RBF":
+            kernel = RBFKernel(**kwargs)
+        elif kernel == "Matern12":
+            kernel = MaternKernel(nu=1 / 2, **kwargs)
+        elif kernel == "Matern32":
+            kernel = MaternKernel(nu=3 / 2, **kwargs)
+        elif kernel == "Matern52":
+            kernel = MaternKernel(nu=5 / 2, **kwargs)
+        elif kernel == "RQ":
+            kernel = RQKernel(**kwargs)
+        else:
+            raise ValueError("Specified kernel not known.")
+
+        kernel.lengthscale = initial_lengthscale * torch.ones_like(kernel.lengthscale)
+
+        self.mean_module = ConstantMean(batch_shape=batch_shape)
+        self.covar_module = ScaleKernel(kernel, batch_shape=batch_shape)
+
+    def forward(self, x):
+        mean = self.mean_module(x)
+        covar = self.covar_module(x)
+
+        return MultivariateNormal(mean, covar)
+
+    @property
+    def inducing_points(self):
+        for name, param in self.named_parameters():
+            if "inducing_points" in name:
+                return param
 
 class DKL(gpytorch.Module):
     def __init__(self, feature_extractor, gp):
